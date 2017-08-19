@@ -17,6 +17,9 @@ nnoremap <silent> <F12> :A<CR>
 nnoremap <silent> <F3> :Grep<CR>  
 let g:SuperTabRetainCompletionType=2  
 let g:SuperTabDefaultCompletionType="<C-X><C-O>"
+
+" 防止方向键乱码
+set nocompatible
 " 自动语法高亮  
 syntax on  
 " 检测文件类型  
