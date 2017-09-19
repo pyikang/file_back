@@ -1,0 +1,23 @@
+digraph g{
+    edge[fontname="SimHei"];
+    node[shape=box,fontname="FangSong",fontsize=14];
+    rankdir = TB;
+
+    //根节点
+
+    //子视图
+    subgraph cluster0{
+        fontname = "KaiTi";
+        label = "";
+        //节点内容
+        //节点关联
+    }
+    subgraph cluster1{
+        fontname = "KaiTi";
+        label = "";
+        //节点内容
+        //节点关联
+    }
+
+    //节点关联
+}
