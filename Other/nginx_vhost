@@ -4,6 +4,10 @@ server {
     root   /var/www/example;
     location / {
         index  index.html index.htm index.php;
+        if (!-e $request_filename) {
+            rewrite  ^(.*)$  /index.php?s=$1  last;
+            break;
+        }
     }
     location ~ \.php(.*)$ {
         fastcgi_pass   127.0.0.1:9000;
